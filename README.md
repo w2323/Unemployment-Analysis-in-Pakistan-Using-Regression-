@@ -197,6 +197,51 @@ The project report and accompanying analysis include:
 - 📊 Bar chart comparing test-set MSE across models
 
 > See `/figures` or the full project report (`probProjectReport.pdf`) for all plots referenced above.
+# Pakistan Unemployment Analysis - Interactive Dashboard
+
+**Live Demo:** [https://statistics-project.netlify.app](https://statistics-project.netlify.app)
+
+This directory (`/demo`) contains a modern, interactive web frontend built to replicate the original `tcltk` R Graphical User Interface (GUI) of the Pakistan Unemployment Analysis project. 
+
+It was created to present the analytical findings and model results through a "God-Tier", sleek, and user-friendly web experience without requiring clients to install R or execute scripts locally.
+
+## ✨ Features
+- **Modern Glassmorphism UI**: Beautiful, responsive layout featuring custom dark mode aesthetics, smooth CSS transitions, and Google Fonts (Outfit).
+- **Data Preview**: In-browser parsing and rendering of the processed dataset (`final_dataset.csv`).
+- **Statistical Summaries**: Clean, formatted tables for summary statistics.
+- **Interactive Visualizations**: View high-quality statistical plots directly in the browser (Boxplots, Scatterplots, Variable Importance).
+- **Model Results**: Showcases side-by-side performance metrics (MSE, RMSE, MAE) for Multiple Linear Regression and Random Forest models.
+
+## 🛠️ Built With
+- **React.js** (via Vite)
+- **Vanilla CSS** (Custom Variables, Flexbox, Animations)
+- **PapaParse** (for reading local CSV files in the browser)
+- **Lucide React** (for modern SVG icons)
+
+## ⚠️ Limitations (Important)
+Since this is a static **Frontend Demo** meant for hosting on platforms like Netlify, please note the following technical limitations:
+1. **No Live Backend/Compute**: The Multiple Linear Regression and Random Forest models are *not* training in real-time within the browser. 
+2. **Static Outputs**: The graphs (`boxplot.png`, `scatterplots.png`, etc.) and the metric scores (MSE, RMSE) are static assets. They are the exact pre-computed outputs from the original `analysis.R` script.
+3. **No Real-Time Prediction**: You cannot upload a new CSV or change the variables on the fly to get new predictions. The data and results reflect the specific historical dataset of Pakistan (1960-2024).
+
+This architecture allows the project to be highly portable, secure, and fast, serving exactly as a presentation layer for the underlying R data science project.
+
+## 💻 Local Setup
+If you want to run this frontend locally on your machine:
+
+1. Navigate to the `demo` directory:
+   ```bash
+   cd demo
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and visit the `localhost` URL provided in the terminal.
 
 ---
 
