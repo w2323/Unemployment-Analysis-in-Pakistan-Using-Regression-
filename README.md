@@ -199,7 +199,7 @@ The project report and accompanying analysis include:
 > See `/figures` or the full project report (`probProjectReport.pdf`) for all plots referenced above.
 # Pakistan Unemployment Analysis - Interactive Dashboard
 
-**Live Demo:** [https://statistics-project.netlify.app](https://statistics-project.netlify.app)
+**Live Demo:** [https://statistics-project.netlify.app](https://statistics-projects.netlify.app)
 
 This directory (`/demo`) contains a modern, interactive web frontend built to replicate the original `tcltk` R Graphical User Interface (GUI) of the Pakistan Unemployment Analysis project. 
 
